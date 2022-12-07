@@ -63,15 +63,29 @@ public class Main {
             System.out.println("Мест нет");
         }
         System.out.println("Задание 7");
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (three > two){
-            System.out.println("three");
-        } else if (two > one) {
-            System.out.println("two");
+        int one = 5;
+        int two = 5;
+        int three = 5;
+        if (one > two){
+        if (one >= three) {
+            System.out.println("Максимальное число - " + one);
         }else {
-            System.out.println("one");
+            System.out.println("Максимальное число - " + three);
+        }
+        } else if (two > one) {
+            if (two > +three) {
+                System.out.println("Максимальное число - " + two);
+            }else {
+                System.out.println("Максимальное число - " + three);
+            }
+        }else {
+            if (one > three){
+                System.out.println("Максимальное число - " + one);
+            } else if (three > one) {
+                System.out.println("Максимальное число - " + three);
+            }else {
+                System.out.println("все 3 числа равны");
+            }
         }
     }
 }
